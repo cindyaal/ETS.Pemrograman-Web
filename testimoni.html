@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni - Pastry.Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.jpeg">
+            <h1>Pastry.Co</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimoni.html" class="active">Testimoni</a></li>
+                <li><a href="order.html">Data Pesanan</a></li>
+                <li><a href="#" id="cartLink">Cart <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- TESTIMONI -->
+<section class="testimonials">
+    <div class="container">
+        <h1>What Our Customers Say</h1>
+        <p class="subtitle">Real reviews from our happy customers 💖</p>
+
+        <div class="testimonial-container">
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Blueberry Cheese Cake-nya lembut banget!"</p>
+                <h4>- Siti</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Croissant-nya buttery dan enak banget!"</p>
+                <h4>- Andi</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐☆</div>
+                <p>"Pelayanan cepat dan ramah 👍"</p>
+                <h4>- Rina</h4>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Harga murah tapi rasa premium!"</p>
+                <h4>- Dimas</h4>
+            </div>
+
+        </div>
+
+        <!-- Tombol ke menu -->
+        <div style="margin-top:30px;">
+            <a href="menu.html" class="btn-primary">Order Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- CART MODAL -->
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-btn" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-body">
+            <div id="cartItems">
+                <p class="empty-cart-message">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <h3>Total: Rp<span id="cartTotal">0</span></h3>
+                </div>
+                <button class="btn-primary checkout-btn" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Pastry.Co | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
